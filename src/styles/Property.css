@@ -1,0 +1,86 @@
+.property-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.property-wrapper .property {
+  width: 100%;
+  color: white;
+}
+
+.property-wrapper .property .img {
+  height: 500px;
+}
+
+.property-wrapper .property .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.property-wrapper .property .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 10px 20px;
+  background-color: #272525;
+}
+
+.property-wrapper .property .content h1.heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+.property-wrapper .property .content h2.description {
+  font-size: 20px;
+
+  font-weight: 400;
+}
+
+.property-wrapper .property .content .details,
+h2.description {
+  font-weight: 500;
+  width: 50%;
+}
+
+.property-wrapper .property .content .details ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.property-wrapper .property .content .details ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.property-wrapper .property .content .details ul li svg {
+  font-size: 24px;
+}
+
+.property-wrapper .property .CTA {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.property-wrapper .property .CTA ul.loan {
+  display: flex;
+  column-gap: 20px;
+}
+
+.property-wrapper .property .CTA a {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.property-wrapper .property .CTA a.btn-call {
+  background-color: #3893fe;
+}
+.property-wrapper .property .CTA a.btn-whatsapp {
+  background-color: #14d63e;
+}

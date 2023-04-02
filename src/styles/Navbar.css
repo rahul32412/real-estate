@@ -1,0 +1,130 @@
+.nav-wrapper {
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 10px;
+}
+
+.nav-wrapper nav,
+.nav-wrapper nav .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-wrapper nav {
+  padding: 0;
+  height: 50px;
+}
+
+.nav-wrapper nav .links {
+  column-gap: 150px;
+}
+
+.nav-toggler {
+  display: none;
+}
+
+.nav-wrapper nav .logo h3 {
+  font-size: 28px;
+}
+.nav-wrapper nav .nav-links,
+.nav-wrapper nav .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.nav-wrapper nav a,
+.nav-wrapper nav button {
+  color: white;
+}
+
+.nav-wrapper nav .nav-links a span {
+  position: relative;
+}
+
+.nav-wrapper nav .nav-links a span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  border-radius: 1px;
+  background-color: var(--primary);
+  transition: width 0.2s ease-out;
+}
+
+.nav-wrapper nav .nav-links a:hover span::after {
+  width: 50%;
+}
+
+.nav-toggler button {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-wrapper nav .logo h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-wrapper nav .links {
+    column-gap: 50px;
+  }
+  .nav-wrapper nav .logo h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav-wrapper nav .links {
+    column-gap: 30px;
+  }
+  .nav-wrapper {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-wrapper nav {
+    position: relative;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%);
+  }
+
+  .nav-toggler {
+    display: block;
+  }
+  .nav-wrapper nav .links.open {
+    display: flex;
+  }
+  .nav-wrapper nav .social-links {
+    display: none;
+  }
+  .nav-wrapper nav .nav-links {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .nav-wrapper nav .nav-links li {
+    width: 100%;
+  }
+  .nav-wrapper nav .nav-links a {
+    display: block;
+    text-align: center;
+  }
+}

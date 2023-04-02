@@ -1,0 +1,51 @@
+.hero {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero .hero-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 70px;
+  padding: 0 40px;
+  color: white;
+}
+
+.hero .call-to-action {
+  align-self: center;
+}
+
+.hero .call-to-action a {
+  color: white;
+  background-color: var(--primary);
+  padding: 15px 20px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.hero h1.heading {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.hero h2.description {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+}
