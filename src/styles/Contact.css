@@ -1,0 +1,44 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.contact .form-item {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+.contact form label {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  max-width: 300px;
+  width: 300px;
+  border: 0.5px solid #b0b0b0;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.contact form .btn-submit {
+  width: 40%;
+  background-color: rgb(75 255 75);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5%;
+}

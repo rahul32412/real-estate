@@ -33,12 +33,10 @@
 }
 .property-wrapper .property .content h2.description {
   font-size: 20px;
-
   font-weight: 400;
 }
 
-.property-wrapper .property .content .details,
-h2.description {
+.property-wrapper .property .content .details {
   font-weight: 500;
   width: 50%;
 }
